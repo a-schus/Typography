@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Typography</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images/resources.qrc">
+    <normaloff>:/images/Icon.png</normaloff>:/images/Icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTypography">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>Новый</string>
+     </property>
+     <addaction name="newHeidelberg"/>
+     <addaction name="newXerox"/>
+    </widget>
+    <addaction name="menu_4"/>
+    <addaction name="Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Инструменты</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>Пользователи</string>
+     </property>
+     <addaction name="newUser"/>
+     <addaction name="changePassword"/>
+    </widget>
+    <addaction name="newTab"/>
+    <addaction name="clientsTable"/>
+    <addaction name="connection"/>
+    <addaction name="FormReport"/>
+    <addaction name="separator"/>
+    <addaction name="menu_2"/>
+   </widget>
+   <addaction name="menuTypography"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="Quit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="clientsTable">
+   <property name="text">
+    <string>База клиентов</string>
+   </property>
+  </action>
+  <action name="connection">
+   <property name="text">
+    <string>Настройки соединения</string>
+   </property>
+  </action>
+  <action name="newHeidelberg">
+   <property name="text">
+    <string>Гейдельберг</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="newXerox">
+   <property name="text">
+    <string>Xerox</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="newTab">
+   <property name="text">
+    <string>Новая вкладка</string>
+   </property>
+  </action>
+  <action name="FormReport">
+   <property name="text">
+    <string>Сформировать отчет</string>
+   </property>
+  </action>
+  <action name="newUser">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="changePassword">
+   <property name="text">
+    <string>Изменить пароль</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
